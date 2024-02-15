@@ -1,3 +1,90 @@
 main {
-    background:pink;
+    background:white;
+    border-radius:10px;
+}
+
+header {
+    background:white;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+h4, h5, h6, p {
+    color:black;
+    font-size:18px;
+}
+
+h1 {
+    color:black;
+    font-size:32px;
+}
+
+h2 {
+    color:black;
+    font-size:26px;
+}
+
+h3 {
+    color:black;
+    font-size:22;
+}
+
+
+body {
+    background:greenyellow;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#tweet {
+    background-color:white;
+    border-radius:10px;
+}
+
+#copyright {
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav li {
+    border:solid;
+    border-width:1px;
+    border-color: white;
+    list-style-type: none;
+}
+
+nav li a {
+    color:white;
+    text-align:center;
+    text-decoration:none;
+}
+
+nav li:hover {
+    background-color: greenyellow;
+}
+
+.active {
+    background-color: green;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border:solid;
+    border-width:2px;
+    border-color:#f0f0f0;
+}
+
+table tr:nth-child(even) {
+    background-color:#f2f2f2;
+}
+
+table tr:hover {
+    background-color:greenyellow;
+}
+
+table th {
+    background-color: greenyellow;
+    color:white;
 }
