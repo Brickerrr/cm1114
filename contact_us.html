@@ -4,8 +4,9 @@
         </li><link rel='stylesheet' href="css/main.css">
     </head>
 
-    <bodyy>
+    <body>
         <header>
+            <img id ="logo" src="images/horse.jpg">
             <h1>HORSE HATERS SOCIETY</h1>
         </header>
 
@@ -21,16 +22,14 @@
 
         <main>
             <div>
-                <h3>Contact Us</h3>
-
-            </div>
-            <div>
-                <form>
-                    <fieldset>
-                        <legend>Contact us with any queries using the form below!</legend>
-
+                
+                <div id = "LEFTCOL">
+                    <h3>Contact Us</h3>
+                    <form>
+                      <p>Contact us with any queries using the form below!</p>
+                      <fieldset>
                         <label for="name">Name: </label>
-                        <input type="text" name="name" value=""/>
+                        <input type="text" name="name" value=""/><br>
 
                         <label for="email">Email: </label>
                         <input type="text" name ="email" value = ""/><br>
@@ -47,8 +46,13 @@
                         
                         <input type ="button" name ="submit" value="submit">
 
-                    </fieldset> 
-                </form>
+                      </fieldset> 
+                    </form>
+                </div>
+            </div>
+
+            <div id="RIGHTCOL">
+                <a class="twitter-timeline" data-height="300" href="https://twitter.com/thehorse?ref_src=twsrc%5Etfw">Tweets by thehorse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
             </div>
         </main>
 
@@ -60,6 +64,6 @@
             <p id= "copyright">Copyright Finlay Gray</p>
         </footer>
 
-    </bodyy>
+    </body>
 
 </html>
