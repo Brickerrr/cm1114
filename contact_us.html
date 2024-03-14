@@ -44,15 +44,24 @@
                         <label for="attachments">Please attach any relevant files</label>
                         <input type ="file" id ="attachments" name ="attachments"><br>
                         
-                        <input type ="button" name ="submit" value="submit">
+                        <input type ="button" name ="submit" value ="submit" onclick='send_form("form_outcome", "Form sent Successfully!")'>
+                        <script>
+                            function send_form(id,text) {
+                                var container = document.getElementById(id);
+                                container.innerHTML = text;
+                            }
+                        </script>
 
                       </fieldset> 
                     </form>
+                    <div>
+                        <p id ="form_outcome"></p>
+                    </div>
                 </div>
             </div>
 
             <div id="RIGHTCOL">
-                <a class="twitter-timeline" data-height="300" href="https://twitter.com/thehorse?ref_src=twsrc%5Etfw">Tweets by thehorse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                <a class="twitter-timeline" data-height="400" href="https://twitter.com/thehorse?ref_src=twsrc%5Etfw">Tweets by thehorse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
             </div>
         </main>
 
