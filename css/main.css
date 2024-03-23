@@ -72,7 +72,7 @@ nav li {
     border-color: white;
     list-style-type: none;
     float: left;
-    width:15%;
+    width:14.28%;
     padding:16px;
 }
 
@@ -110,7 +110,7 @@ table tr:hover {
 
 table th {
     background-color: greenyellow;
-    color:white;
+    color:darkgreen;
 }
 
 #logo {
@@ -120,16 +120,21 @@ table th {
     margin-right:10px;
 }
 
+/*creates a coloumn for content to the left of an element*/
 #LEFTCOL {
-    width:70%;
+    width:65%;
     float:left;
     padding:20px;
+    overflow:hidden;
 }
 
+/*creates a coloumn for content to the right of an element*/
 #RIGHTCOL {
-    width:20%;
+    width:25%;
+    height:500px;
     float:right;
     padding:20px;
+    overflow:hidden;
 }
 
 .carousel-item {
@@ -155,11 +160,11 @@ table th {
     margin:auto;
 }
 
-#memberimage {
+#memberimage1, #memberimage2  {
     margin-left:30%;
 }
 
-#membertext {
+#membertext1, #membertext2, #membertext3, #membertext4 {
     margin-left: 30%;
 }
 
@@ -168,3 +173,6 @@ table th {
     display:inline;
 }
 
+.eventsTable {
+    overflow:hidden;
+}

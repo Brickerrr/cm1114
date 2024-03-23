@@ -1,6 +1,7 @@
-<html> 
+<!DOCTYPE html> 
     <head>
         <title>Horse Haters Society</title>
+        <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel='stylesheet' href="css/main.css">
@@ -8,7 +9,7 @@
 
     <body>
         <header>
-            <img id ="logo" src="images/horse.jpg">
+            <img id ="logo" src="images/horse.jpg" alt="horse logo">
             <h1>HORSE HATERS SOCIETY</h1>
         </header>
 
@@ -19,12 +20,16 @@
                 <li class = "active"><a href = "current_members.html">Current Members</a></li>
                 <li class = "active"><a href = "img_gallery.html">Image Gallery</a></li>
                 <li class = "active"><a href = "contact_us.html">Contact Us</a></li>
+                <li class ="active"><a href ="hate_wall.html">Hate Wall</a></li>
+                <li class ="active"><a href ="testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
 
         <main>
             <div>
                 <h3>Image Gallery</h3>
+
+                <!-- inverts the image, called onmouseover and onmouseout, to keep the inverted colour-->
                 <script>
                     function invert(x) {
                         x.style ="filter:invert(100%);"
@@ -33,26 +38,30 @@
                 <div id = "img-gallery" class ="container">
                     <div class ="row">
                         <div class ="col-sm">
-                            <img src="images/horseSuck1.jpg" alt="stupid horse" id ="horseImage1" class="gallery-img" onmouseover=" invert(this)" onmouseout ="invert(this)"/>
-                            <figcaption>Stupid Horse Pic</figcaption>
+                            <figure>
+                                <img src="images/horseSuck1.jpg" alt="stupid horse" id ="horseImage1" class="gallery-img" onmouseover=" invert(this)" onmouseout ="invert(this)">
+                                <figcaption>Stupid Horse Pic</figcaption>
+                            </figure>       
                         </div>
                         <div class = "col-sm">
-                            <img src="images/dumbhorse2.jpg" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout ="invert(this)"/>
-                            <figcaption>Dumb Horse Pic</figcaption>
+                            <figure>
+                                <img src="images/dumbhorse2.jpg" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout ="invert(this)">
+                                <figcaption>Dumb Horse Pic</figcaption>
+                            </figure>
                         </div>
                         <div class = "col-sm">
-                            <img src="images/GROSSHORSEUGH.jfif" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout ="invert(this)"/>
+                            <img src="images/GROSSHORSEUGH.jfif" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout ="invert(this)">
                         </div>
                     </div>
                     <div class ="row">
                         <div class = "col-sm">
-                            <img src="images/stupidlooker.jfif" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout ="invert(this)"/>
+                            <img src="images/stupidlooker.jfif" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout ="invert(this)">
                         </div>
                         <div class = "col-sm">
-                            <img src="images/britishhorse.jpg" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout =" invert(this)"/>
+                            <img src="images/britishhorse.jpg" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout =" invert(this)">
                         </div>
                         <div class = "col-sm">
-                            <img src="images/losers.jpg" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout =" invert(this)"/>
+                            <img src="images/losers.jpg" alt="dumb horse" class="gallery-img" onmouseover=" invert(this)" onmouseout =" invert(this)">
                         </div>
                     </div>
                 </div>
