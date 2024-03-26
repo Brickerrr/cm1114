@@ -176,3 +176,12 @@ table th {
 .eventsTable {
     overflow:hidden;
 }
+
+#hateForm {
+    margin-left:35%
+}
+
+.statement {
+    background-color:green;
+    color:white;
+}

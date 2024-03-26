@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+    <head>
+        <title>Horse Haters Society</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel='stylesheet' href="css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <img id ="logo" src="images/horse.jpg" alt="horse logo">
+            <h1>HORSE HATERS SOCIETY</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class = "active"><a href = "index.html">Home page</a></li>
+                <li class = "active"><a href = "event_calendar.html">Event Calendar</a></li>
+                <li class = "active"><a href = "current_members.html">Current Members</a></li>
+                <li class = "active"><a href = "img_gallery.html">Image Gallery</a></li>
+                <li class = "active"><a href = "contact_us.html">Contact Us</a></li>
+                <li class ="active"><a href ="hate_wall.html">Hate Wall</a></li>
+                <li class ="active"><a href ="statements.html">Statements</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div>
+                <h3>Hate Wall</h3>
+                <div>
+                    <p id = "horseWall">
+                        Horses? Ugh, don't even get me started. Those overgrown, money-sucking, accident-prone, stubborn-as-hell creatures are nothing but trouble. They'll drain your bank account faster than you can say "vet bill," demand more time and attention than a needy toddler, and have a knack for turning even the most spacious pasture into a muddy disaster zone. And let's not even talk about their attitude problems—seriously, trying to train one is like banging your head against a brick wall. Plus, don't even get me started on the whole horse racing and carriage ride industry; it's a whole other level of exploitation and mistreatment. In short, unless you're a glutton for punishment with money to burn, steer clear of these four-legged nightmares.
+                    </p>
+                </div>
+                <div>
+                    <Form id = "hateForm">
+                        <label>Have something to add?: </label><br>
+                        <textarea id = "addition" name ="query" cols="40" rows = "5"></textarea><br>
+
+                        <input type ="button" name ="submit" value ="submit" onclick="addText()">
+                        <script>
+                            function addText() {
+                                var txt = document.createTextNode(document.getElementById("addition").value);
+                                var addee = document.getElementById("horseWall");
+                                addee.appendChild(txt)
+                                document.getElementById("addition").value = " "
+                            }
+                        </script>
+                    </Form>
+                </div>      
+            </div>
+           
+        </main>
+
+        <aside>
+            <h3 id="tweet">Latest Tweets</h3>
+        </aside>
+
+        <footer>
+            <p id= "copyright">Copyright Finlay Gray</p>
+        </footer>
+
+    </body>
+
+</html>
