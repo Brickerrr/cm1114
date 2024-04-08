@@ -94,6 +94,8 @@ table{
     border-collapse: collapse;
 }
 
+
+
 table td, table th {
     border:solid;
     border-width:2px;
@@ -111,6 +113,12 @@ table tr:hover {
 table th {
     background-color: greenyellow;
     color:darkgreen;
+    text-align: center;
+}
+
+table td {
+    font-size: 10pt;
+    padding:5px;
 }
 
 #logo {
@@ -160,8 +168,9 @@ table th {
     margin:auto;
 }
 
-#memberimage1, #memberimage2  {
+.memberImage  {
     margin-left:30%;
+    border-radius: 5px;
 }
 
 #membertext1, #membertext2, #membertext3, #membertext4 {
@@ -184,4 +193,21 @@ table th {
 .statement {
     background-color:green;
     color:white;
+}
+
+.newsImage {
+    height:155px;
+    width:155px;
+    float:left;
+    overflow:hidden;
+    margin-right:10px;
+    
+}
+
+.day {
+    width:14%;
+}
+
+#eventForm {
+    padding:10px;
 }

@@ -1,3 +1,16 @@
+<!-- 
+    Threat Model
+
+    Threat Source: External
+    Threat Agent: Human
+    Threat Intention: Intentional
+    Threat Motivation: Password Theft
+    Threat Impact: Identity theft, Non-admins having access to admin commands,
+privacy breach
+    Threat Mitigation: 2fa, madatory password change, complex password required
+
+-->
+
 <!DOCTYPE html> 
     <head>
         <title>Horse Haters Society</title>
@@ -11,21 +24,29 @@
         <header>
             <img id ="logo" src="images/horse.jpg" alt="horse logo">
             <h1>HORSE HATERS SOCIETY</h1>
-            <form class ="login">
+            <form class ="login" name ="login">
                 <input type="text" name="email" placeholder="email">
-                <input type="text" name="email" placeholder ="password">
-                <input type = "button" value = "login" onclick ="login()">
+                <input type="text" name="password" placeholder ="password">
+                <input type = "button" value = "login" onclick ="loginFunction()">
             </form>
             <script>
                 // logs in the user, if clicked when already logged in, will log out the user
                 var counter =2;
-                function login() {
-                    if(counter %2 ==0 ) {
-                        alert("logged in")
+                function loginFunction() {
+                    var email = document.forms["login"]["email"].value;
+                    var password = document.forms["login"]["password"].value;
+                    if (email =="") {
+                        alert("must have an email") 
+                    } else if (password =="") {
+                        alert("must have a password")
                     } else {
-                        alert("logged out!")
+                        if(counter %2 ==0 ) {
+                            alert("logged in")
+                        } else {
+                            alert("logged out!")
+                        }
+                        counter +=1;
                     }
-                    counter +=1;
                 }
             </script>
         </header>
@@ -84,11 +105,17 @@
         </main>
 
         <aside>
-            <h3 id="tweet">Latest Tweets</h3>
+            <div id ="tweet">
+                <h3>Latest News</h3>
+                <img src = "images/horseinsuit2.webp" class ="newsImage" alt = "horse">
+                <h4>HORSE IS SUIT SPOTTED</h4>
+                <p id ="newsText">In an unexpected turn of events, a sharply dressed individual in a sleek suit has been spotted making waves in the bustling city streets. Eyewitnesses report catching glimpses of the mysterious figure striding with purpose, exuding an air of confidence and sophistication. The sighting has sparked curiosity among onlookers, with speculation swirling about the identity and intentions of this enigmatic character. Some speculate it might be a high-profile executive, a clandestine agent, or even a well-dressed urban traveler. As speculation mounts, the allure of the suited individual continues to captivate the imagination of the public, leaving many eagerly awaiting further developments in this intriguing tale.</p>
+            </div>
+            
         </aside>
 
         <footer>
-            <p id= "copyright">Copyright Finlay Gray</p>
+            <p id= "copyright">Copyright Finlay Gray 2024</p>
         </footer>
 
     </body>

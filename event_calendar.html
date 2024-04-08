@@ -32,7 +32,7 @@
             <div>
                 <table class = "eventsTable">
                     <tr>
-                        <td></td><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+                        <td></td><th class = "day">Monday</th><th class = "day">Tuesday</th><th class = "day">Wednesday</th><th class = "day">Thursday</th><th class = "day">Friday</th><th class = "day">Saturday</th><th class = "day">Sunday</th>
                     </tr>
                     <tr>
                         <th>W1</th><td>Welcome to the Society!<br>New members intros</td><td></td><td></td><td></td><td></td><td></td><td></td>
@@ -72,14 +72,43 @@
                     </tr>
                 </table>
             </div>
+            <div id ="eventForm">
+                <br>
+                <p>Want to recommend us an event? Tell us below!</p>
+                <form name ="event">
+                    <fieldset>
+                        <label>Event title: </label>
+                        <input type="text" name ="event_title"><br><br>
+
+                        <label>Event Date: </label>
+                        <input type ="date" name ="event_date"><br><br>
+
+                        <input type ="button" value="Submit Event" onclick="submit_event()">
+                        
+                    </fieldset>
+                </form>
+                <script>
+                    function submit_event() {
+                        var title = document.forms["event"]["event_title"].value;
+                        var date = document.forms["event"]["event_date"].value;
+                        if (title == "") {
+                            alert("An event must have a title!");
+                        } else if (date.length == 0) {
+                            alert("An event must have a date!");
+                        } else {
+                            alert("Event submitted! The society will contact you soon!");
+                        }
+                    }
+                
+                </script>
+            </div>
         </main>
 
         <aside>
-            <h3 id="tweet">Latest Tweets</h3>
         </aside>
 
         <footer>
-            <p id= "copyright">Copyright Finlay Gray</p>
+            <p id= "copyright">Copyright Finlay Gray 2024</p>
         </footer>
 
     </body>
