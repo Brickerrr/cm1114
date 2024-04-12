@@ -193,6 +193,7 @@ table td {
 .statement {
     background-color:green;
     color:white;
+    border-radius: 5px;
 }
 
 .newsImage {
