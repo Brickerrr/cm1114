@@ -38,10 +38,8 @@
                         <label>Have something to add?: </label><br>
                         <textarea id = "addition" name ="query" cols="40" rows = "5"></textarea><br>
 
-                        <!-- onclick, calls the addText() function -->
                         <input type ="button" name ="submit" value ="submit" onclick="addText()">
                         <script>
-                            /*gets the text from the textarea called addition and adds it to paragraph with id horsewall. refs : https://www.w3schools.com/jsref/met_node_appendchild.asp , https://www.w3schools.com/jsref/prop_textarea_value.asp -->*/
                             function addText() {
                                 var txt = document.createTextNode(document.getElementById("addition").value);
                                 var addee = document.getElementById("horseWall");
